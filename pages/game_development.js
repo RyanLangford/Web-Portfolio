@@ -35,7 +35,7 @@ export default function Game_Development() {
               </div>
             </div>
             <div className="card">
-              <img className="winfo" src="../files/Projects/dubHacks.png"></img>
+              <img className="winfo" src="../files/Projects/dubHacks.PNG"></img>
               <div className="container">
                 <h4>ZOOM Rework</h4>
                 <p className="text left">This project was the final deliverable for the 2021 DubHacks Hackathon at the Universiy of Washington. I created this website as a informational page on the plan for improving ZOOM's usability by making the UI simpler and improving customizability for closed captions.</p>

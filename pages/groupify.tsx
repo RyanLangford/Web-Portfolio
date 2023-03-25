@@ -15,16 +15,16 @@ export default function Groupify() {
               <a className="homebtn">Home</a>
             </Link>
             <p className="header description">If you have a Spotify premium account, click <a href="https://groupify-ae530.web.app/" target="_blank">here</a>  to check out the groupify app!</p>
-            <img src="../files/Groupify/HomeScreen.png" width="80%" height="100%" alt="Home Screen"></img>
+            <img src="../files/Groupify/HomeScreen.PNG" width="80%" height="100%" alt="Home Screen"></img>
             <p className="description"> Groupify is a web-based Spotify extension that allows users more control when playing music in a group setting. My group and I designed this app with social events in mind. Before Groupify, we felt that equal control over the music was difficult to achieve in a large group. Groupify fixes this by allowing all users to join a party and control one music player using the host's Spotify account. This way, everyone in the Groupify party has remote access to the music to add, remove, or skip songs without having to track down the person playing the music.</p>
             <div className="images">
-              <img src="../files/Groupify/LoginScreen.png" width="40%" height="100%" alt="Login Screen"></img>
-              <img src="../files/Groupify/QueueHistory.png" width="40%" height="100%" alt="Queue History Screen"></img>
+              <img src="../files/Groupify/LoginScreen.PNG" width="40%" height="100%" alt="Login Screen"></img>
+              <img src="../files/Groupify/QueueHistory.PNG" width="40%" height="100%" alt="Queue History Screen"></img>
             </div>
             <div className="my_contribution">
               <p className="description">My role in this project was mainly a designer. I was in charge of displaying the elements of our project on the screen in a usable and pleasing way. I had to balance aesthetics with functionallity to create a layout that was easy to use, appealing, and worked on all screen sizes. I also helped create the elements of the web page and connect our server to Spotify using their API.</p>
               <div className="column">
-                <img src="../files/Groupify/MobileView.png" width="70%" height="100%" alt="My Contribution"></img>
+                <img src="../files/Groupify/MobileView.PNG" width="70%" height="100%" alt="My Contribution"></img>
                 <p>Mobile view of the Home Page</p>
               </div>
             </div>

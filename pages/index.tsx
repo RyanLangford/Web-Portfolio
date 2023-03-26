@@ -1,26 +1,6 @@
 import Head from 'next/head';
-import { MouseEventHandler } from 'react';
 
 export default function Home() {
-  if (typeof window === "object") {
-    // code is running in a browser environment
-    const slidesContainer = document.getElementById("slides-container");
-    const slide = document.querySelector(".slide");
-    const prevButton = document.getElementById("slide-arrow-prev");
-    const nextButton = document.getElementById("slide-arrow-next");
-    nextButton.addEventListener("click", () => {
-      const slideWidth = slide.clientWidth / 2;
-      slidesContainer.scrollLeft += slideWidth;
-    });
-    prevButton.addEventListener("click", () => {
-      const slideWidth = slide.clientWidth / 2;
-      slidesContainer.scrollLeft -= slideWidth;
-    });
-  } else {
-    // code is running in a non-browser environment
-  }
-  
-
   return (
     <div className="page">
       <Head>
@@ -198,6 +178,7 @@ export default function Home() {
           Source code on{' '}
           <img src="/github.png" alt="Github" className="logo" />
         </a>
+        <script type="text/javascript" src="index.js"></script>
       </footer>
     </div>
   )

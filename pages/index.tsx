@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { slide as Menu } from 'react-burger-menu';
 
 export default function Home() {
   if (typeof window === "object") {
@@ -35,8 +36,17 @@ export default function Home() {
       </Head>
 
       <main>
+        <Menu>
+          <a id="overview_nav" className="menu-item" href="#overview">Overview</a>
+          <a id="resume_nav" className="menu-item" href="#resume">Resume</a>
+          <a id="ISAAC_nav" className="menu-item" href="#ISAAC">ISAAC Capstone Project</a>
+          <a id="groupify_nav" className="menu-item" href="#groupify">Groupify Webdev Project</a>
+          <a id="UWSOM_nav" className="menu-item" href="#UWSOM">UWSOM Web Developer</a>
+          <a id="design_nav" className="menu-item" href="#design">Design Projects</a>
+          <a id="hobbies_nav" className="menu-item" href="#hobbies">Hobbies & Creative Pieces</a>
+        </Menu>
         <div className='scroll-container'>
-          <section className='overview'>
+          <section className='overview child' id='overview'>
             <h1 className="title">
               Welcome to <em>Ryan Langford&apos;s</em> Portfolio
             </h1>
@@ -44,14 +54,14 @@ export default function Home() {
               Welcome to my portfolio. My name is Ryan Langford and I am passionate about design, games and storytelling. I am a student at the University of Washington studying Informatics with a focus on Web Development and Human-Computer Interaction.
             </p>
           </section>
-          <section className='resume'>
+          <section className='resume child' id='resume'>
             <div className="container">
               <h1 className="title"> My Resume </h1>
               <p className="description">If you are having trouble viewing the framed version of my resume below, <a href="../files/resume.pdf" download>click here</a> to download it.</p>
               <iframe className="file" src="../files/resume.pdf#toolbar=0" width="80%" height="100%"></iframe>
             </div>
           </section>
-          <section className='ISAAC' >
+          <section className='ISAAC child' id='ISAAC' >
             <h1 className='title'> ISAAC </h1>
             <div className='ISAAC_section'>
               <h2 className='ISAAC_section_title'>About the Project</h2>
@@ -68,8 +78,10 @@ export default function Home() {
             <div className='ISAAC_section'>
               <h2 className='ISAAC_section_title'>Project Proposal</h2>
               <p className='ISAAC_proposal description'>In order to fulfill both stakeholder’s needs, our solution needs a few key concepts. First, our solution has to be maintainable. Advisors must be able to keep the information up-to-date quickly and easily so that the solution remains valid and advisors still have time to answer complex questions. Next, our solution must be scalable to handle the growing informatics community reliably. Our solution must also be searchable. The problem exists partially because the Canvas page is too difficult to navigate. Our propososed solution will only be an improvement if it is easy and convenient for students to use. Finnally, our solution should provide meaningful data and analytics to the advisors so that knowledge discrepancies like the one that caused this problem are less likely to happen again in the future.</p>
-              <img src="../files/ISAAC/Client-side.png" width="40%" height="100%" alt="Client Side Diagram"></img>
-              <img src="../files/ISAAC/Server-side.png" width="40%" height="100%" alt="Server Side Diagram"></img>
+              <div className='diagrams'>
+                <img className='diagram' src="../files/ISAAC/Client-side.png" width="40%" height="100%" alt="Client Side Diagram"></img>
+                <img className='diagram' src="../files/ISAAC/Server-side.png" width="40%" height="100%" alt="Server Side Diagram"></img>
+              </div>
             </div>
             <div className='ISAAC_section'>
               <h2 className='ISAAC_section_title'>The First Code Sprint</h2>
@@ -95,10 +107,12 @@ export default function Home() {
               <p className='ISAAC_vision description'>With our MVP complete, we hope to started the second half of our project off with another round of user testing. Some features we are looking to improve are the search algorithm as well as the data gathering, aggregation, and serving. Eventually, we would like to reintegrate university authentication to help with assigning administrative privileges and gathering student data that the university already collects.</p>
             </div>
           </section>
-          <section className='groupify'>
+          <section className='groupify child' id='groupify'>
             <h1 className="title"> Groupify </h1>
             <p className="header description">If you have a Spotify premium account, click <a href="https://groupify-ae530.web.app/" target="_blank" rel='noreferrer'>here</a>  to check out the groupify app!</p>
-            <img className='web_img' src="../files/Groupify/HomeScreen.png" width="80%" height="100%" alt="Home Screen"></img>
+            <div className='images'>
+              <img className='web_img' src="../files/Groupify/HomeScreen.png" width="80%" height="100%" alt="Home Screen"></img>
+            </div>
             <p className="description"> Groupify is a web-based Spotify extension that allows users more control when playing music in a group setting. My group and I designed this app with social events in mind. Before Groupify, we felt that equal control over the music was difficult to achieve in a large group. Groupify fixes this by allowing all users to join a party and control one music player using the host&apos;s Spotify account. This way, everyone in the Groupify party has remote access to the music to add, remove, or skip songs without having to track down the person playing the music.</p>
             <div className="images">
               <img className='web_img' src="../files/Groupify/LoginScreen.png" width="40%" height="100%" alt="Login Screen"></img>
@@ -107,16 +121,19 @@ export default function Home() {
             <div className="my_contribution">
               <p className="description">My role in this project was mainly a designer. I was in charge of displaying the elements of our project on the screen in a usable and pleasing way. I had to balance aesthetics with functionallity to create a layout that was easy to use, appealing, and worked on all screen sizes. I also helped create the elements of the web page and connect our server to Spotify using their API.</p>
               <div className="column">
-                <img className='web_img' src="../files/Groupify/MobileView.png" width="70%" height="100%" alt="My Contribution"></img>
+                <img className='web_img' src="../files/Groupify/MobileView.png" width="70%" height="100%" alt="Mobile Home Page"></img>
                 <p>Mobile view of the Home Page</p>
               </div>
             </div>
           </section>
-          <section className='UWSOM'>
+          <section className='UWSOM child' id='UWSOM'>
             <h1 className='title'>Web Developer for UW School of Medicine</h1>
-            <p className='description'>During the Summer of 2022, I worked as a full-stack web developer for UWSOM (University of Washington School of Medicine) on their service learning and community engagement website. Although it was only for a summer, I worked on a lot of different parts of the website. I focused mainly on UX and was often designing new wireframes in Figma or using css to beautify the website itself. The most valuable thing I gained from this position was the ability to work with other developers in a high commit frequency environment, as well as how to handle discrepancies, code conflicts, and other blockers when they arise.</p>
+            <p className='description'>During the Summer of 2022, I worked as a full-stack web developer for UWSOM (University of Washington School of Medicine) on their service learning and community engagement website (view actual website <a href='https://volunteer-site-gcer5r0rc-slweb.vercel.app/'>here</a>). Although it was only for a summer, I worked on a lot of different parts of the website. I focused mainly on UX and was often designing new wireframes in Figma or using css to beautify the website itself. The most valuable thing I gained from this position was the ability to work with other developers in a high commit frequency environment, as well as how to handle discrepancies, code conflicts, and other blockers when they arise.</p>
+            <div className='images'>
+              <img src='../files/UWSOM/home.png' width='80%' height='100%' alt='Service Learning and Community Engagement UWSOM home page' />
+            </div>
           </section>
-          <section className='design'>
+          <section className='design child' id='design'>
             <h1 className="title">Design Projects</h1>
             <h2 className="">Web Design</h2>
             <p className="text description">
@@ -148,8 +165,8 @@ export default function Home() {
               During a summer camp at the University of Washington, I worked on a Unity game with a group of 4 students. The game we chose was a 3D zombie survial game in a small arena with waves of zombies and a timer/score system. I was responsible for the design and development of the player character and zombie entities. Using my knowledge of C# and familiarity with Unities premade assets, I was able to create my part of the game and have it playable in a week.
             </p>
           </section>
-          <section className='hobbies'>
-            <h1 className="title"> My Creative Pieces </h1>
+          <section className='hobbies child' id='hobbies'>
+            <h1 className="title"> Hobbies and Creative Pieces </h1>
             <div className="d+d">
               <h2>Dungeons and Dragons</h2>
               <p className='description'>
@@ -185,7 +202,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer>
+      <footer className='footer'>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"

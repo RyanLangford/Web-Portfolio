@@ -9,6 +9,11 @@ body {
   scroll-snap-type: y mandatory;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -67,6 +72,7 @@ section::-webkit-scrollbar {
   background-color: #9adedb;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .resume {
@@ -172,17 +178,26 @@ a {
   text-decoration: underline;
 }
 
+.resume_small {
+  display: none;
+}
+
 .diagrams {
-  height: 230px
+  display: flex;
+  flex-direction: row;
+  height: max-content;
 }
 
 .slider-wrapper {
-  margin: 1rem;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
 }
 .slides-container {
-  height: calc(100vh - 10rem);
   width: 100%;
   display: flex;
   list-style: none;
@@ -245,16 +260,18 @@ a {
 .web_img {
   border: 1px solid black;
   margin-bottom: 2rem;
+  height: auto;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
 }
 
 .my_contribution {
   display: flex;
   flex-direction: row;
   margin-top: 2em;
-}
-
-.my_contribution P {
-  width: 33%;
 }
 
 .column {
@@ -314,39 +331,6 @@ h2 {
   margin-right: 1rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-@media (min-width: 900px) {
-  .file {
-    margin: 1em;
-    height: 250px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .file {
-    margin: 1em;
-    height: 400px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .file {
-    margin: 1em;
-    height: 500px;
-  }
-}
-
-@media (min-width: 1900px) {
-  .file {
-    margin: 1em;
-    height: 700px;
-  }
-}
 /* custom hamburger menu styles */
 .menu-item {
   margin-bottom: 1em;
@@ -419,4 +403,88 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+/* Media Styles */
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .bm-burger-button {
+    width: 24px;
+    height: 24px;
+    left: 24px;
+    top: 24px;
+  }
+
+  section {
+    padding: 5rem 15%;
+  }
+
+  .title {
+    font-size: 3em;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .resume_big {
+    display: none;
+  }
+
+  .resume_small {
+    display: block;
+  }
+
+  .my_contribution {
+    flex-direction: column;
+  }
+
+  .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+  }
+
+  .btn {
+    margin: .5rem;
+    margin-top: 1em;
+    border-radius: 2px;
+    padding: 0.25em .5em;
+    border: 2px solid #eaeaea;
+    color: #0070f3;
+    text-decoration: none;
+  }
+}
+@media (min-width: 900px) {
+  .file {
+    margin: 1em;
+    height: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .file {
+    margin: 1em;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .file {
+    margin: 1em;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .file {
+    margin: 1em;
+    height: 700px;
+  }
 }

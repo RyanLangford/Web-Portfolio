@@ -48,7 +48,7 @@ export default function Home() {
         <div className='scroll-container'>
           <section className='overview child' id='overview'>
             <h1 className="title">
-              Welcome to <em>Ryan Langford&apos;s</em> Portfolio
+              <em>Ryan Langford&apos;s</em> Portfolio
             </h1>
             <p className="description">
               Welcome to my portfolio. My name is Ryan Langford and I am passionate about design, games and storytelling. I am a student at the University of Washington studying Informatics with a focus on Web Development and Human-Computer Interaction.
@@ -57,8 +57,13 @@ export default function Home() {
           <section className='resume child' id='resume'>
             <div className="container">
               <h1 className="title"> My Resume </h1>
-              <p className="description">If you are having trouble viewing the framed version of my resume below, <a href="../files/resume.pdf" download>click here</a> to download it.</p>
-              <iframe className="file" src="../files/resume.pdf#toolbar=0" width="80%" height="100%"></iframe>
+              <div className='resume_big'>
+                <p className="description">If you are having trouble viewing the framed version of my resume below, <a href="../files/resume.pdf" download>click here</a> to download it.</p>
+                <iframe className="file" src="../files/resume/resume.pdf#toolbar=0" width="80%" height="100%"></iframe>
+              </div>
+              <div className='resume_small'>
+                <a href="../files/resume.pdf" download><img src="../files/resume/resume.png" width="80%" height="100%" alt="My Resume" aria-label='Click to view fullscreen' /></a>
+              </div>
             </div>
           </section>
           <section className='ISAAC child' id='ISAAC' >

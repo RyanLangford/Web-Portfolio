@@ -27,8 +27,6 @@ export default function Home() {
     console.log("non-browser")
   }
 
-  const url = window.location.href;
-
   return (
     <div className="page">
       <Head>

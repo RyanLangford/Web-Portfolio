@@ -40,10 +40,10 @@ export default function Home() {
           <a id="overview_nav" className="menu-item" href="https://portfolio-tau-rose-14.vercel.app/#overview">Overview</a>
           <a id="resume_nav" className="menu-item" href="https://portfolio-tau-rose-14.vercel.app/#resume">Resume</a>
           <a id="ISAAC_nav" className="menu-item" href="https://portfolio-tau-rose-14.vercel.app/#ISAAC">ISAAC Capstone Project</a>
-          <a id="groupify_nav" className="menu-item" href="#https://portfolio-tau-rose-14.vercel.app/#groupify">Groupify Webdev Project</a>
+          <a id="groupify_nav" className="menu-item" href="https://portfolio-tau-rose-14.vercel.app/#groupify">Groupify Webdev Project</a>
           <a id="UWSOM_nav" className="menu-item" href="https://portfolio-tau-rose-14.vercel.app/#UWSOM">UWSOM Web Developer</a>
           <a id="design_nav" className="menu-item" href="https://portfolio-tau-rose-14.vercel.app/#design">Design Projects</a>
-          <a id="hobbies_nav" className="menu-item" href="https://portfolio-tau-rose-14.vercel.app/#hobbies">Hobbies & Creative Pieces</a>
+          <a id="hobbies_nav" className="menu-item" href="https://portfolio-tau-rose-14.vercel.app/#hobbies">Hobbies & Creative Pces</a>
         </Menu>
         <div className='scroll-container'>
           <section className='overview child' id='overview'>

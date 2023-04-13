@@ -58,11 +58,11 @@ export default function Home() {
             <div className="container">
               <h1 className="title"> My Resume </h1>
               <div className='resume_big'>
-                <p className="description">If you are having trouble viewing the framed version of my resume below, <a href="../files/resume.pdf" download>click here</a> to download it.</p>
+                <p className="description">If you are having trouble viewing the framed version of my resume below, <a href="../files/resume/resume.pdf" download>click here</a> to download it.</p>
                 <iframe className="file" src="../files/resume/resume.pdf#toolbar=0" width="80%" height="100%"></iframe>
               </div>
               <div className='resume_small'>
-                <a href="../files/resume.pdf" download><img src="../files/resume/resume.png" width="80%" height="100%" alt="My Resume" aria-label='Click to view fullscreen' /></a>
+                <a href="../files/resume/resume.pdf" download><img src="../files/resume/resume.png" width="80%" height="100%" alt="My Resume" aria-label='Click to view fullscreen' /></a>
               </div>
             </div>
           </section>

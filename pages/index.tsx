@@ -151,7 +151,7 @@ export default function Home() {
               <p className='ISAAC_vision description'>With our capstone project complete, we passed it onto our sponsors. ISAAC is not just a website. With a centralized information repository, ISSAC has the potential to expand into other technologies such as an AI chatbot and more. Both our sponsors and ourselves are excited about the future of ISAAC, and it will continue to be developed by future capstone teams who share the goal of making advising information more useful and accessible for both students and advisors.</p>
             </div>
             <div className='ISAAC_section'>
-              <a className='description button' href='https://ischool.uw.edu/capstone/projects/2023/ischool-student-services-automating-academic-advising-isaac' target="_blank">View the finished capstone presented on the University of Washington Information School capstone archive.</a>
+              <a className='description button' href='https://ischool.uw.edu/capstone/projects/2023/ischool-student-services-automating-academic-advising-isaac' target="_blank" rel='noreferrer'>View the finished capstone presented on the University of Washington Information School capstone archive.</a>
             </div>
           </section>
 
@@ -177,7 +177,7 @@ export default function Home() {
 
           <section className='UWSOM child' id='UWSOM'>
             <h1 className='title'>Web Developer for UW School of Medicine</h1>
-            <p className='description'>During the Summer of 2022, I worked as a full-stack web developer for UWSOM (University of Washington School of Medicine) on their service learning and community engagement website (view actual website <a href='https://volunteer-site-gcer5r0rc-slweb.vercel.app/' target="_blank">here</a>). Although it was only for a summer, I worked on a lot of different parts of the website. I focused mainly on UX and was often designing new wireframes in Figma or using css to beautify the website itself. The most valuable thing I gained from this position was the ability to work with other developers in a high commit frequency environment, as well as how to handle discrepancies, code conflicts, and other blockers when they arise.</p>
+            <p className='description'>During the Summer of 2022, I worked as a full-stack web developer for UWSOM (University of Washington School of Medicine) on their service learning and community engagement website (view actual website <a href='https://volunteer-site-gcer5r0rc-slweb.vercel.app/' target="_blank" rel='noreferrer'>here</a>). Although it was only for a summer, I worked on a lot of different parts of the website. I focused mainly on UX and was often designing new wireframes in Figma or using css to beautify the website itself. The most valuable thing I gained from this position was the ability to work with other developers in a high commit frequency environment, as well as how to handle discrepancies, code conflicts, and other blockers when they arise.</p>
             <div className='images'>
               <img src='../files/UWSOM/home.png' width='80%' height='100%' alt='Service Learning and Community Engagement UWSOM home page' />
             </div>
@@ -237,7 +237,7 @@ export default function Home() {
                 <div className="container">
                   <h3>Fableism</h3>
                   <p className="text left">
-                    <a className="link" href="../files/DD/Fableism.pdf" target="_blank">Fableism</a> is a homebrew religion that I created for my world. It revolves around an omnicient being known as the Writer and its subclasses: <a className="link" href="../files/DD/Oath_of_Fable.pdf" target="_blank">The Oath of Fable Paladin</a> and <a className="link" href="../files/DD/Seer_warlock_Subclass.pdf" target="_blank">The Seer Warlock</a> draw inspiration from the divination Wizard class.
+                    <a className="link" href="../files/DD/Fableism.pdf" target="_blank" rel='noreferrer'>Fableism</a> is a homebrew religion that I created for my world. It revolves around an omnicient being known as the Writer and its subclasses: <a className="link" href="../files/DD/Oath_of_Fable.pdf" target="_blank" rel='noreferrer'>The Oath of Fable Paladin</a> and <a className="link" href="../files/DD/Seer_warlock_Subclass.pdf" target="_blank" rel='noreferrer'>The Seer Warlock</a> draw inspiration from the divination Wizard class.
                   </p>
                 </div>
               </div>

@@ -54,6 +54,7 @@ export default function Home() {
               Welcome to my portfolio. My name is Ryan Langford and I am passionate about design, games and storytelling. I am a student at the University of Washington studying Informatics with a focus on Web Development and Human-Computer Interaction.
             </p>
           </section>
+
           <section className='resume child' id='resume'>
             <div className="container">
               <h1 className="title"> My Resume </h1>
@@ -66,6 +67,7 @@ export default function Home() {
               </div>
             </div>
           </section>
+
           <section className='ISAAC child' id='ISAAC' >
             <h1 className='title'> ISAAC </h1>
             <div className='ISAAC_section'>
@@ -108,10 +110,30 @@ export default function Home() {
               </section>
             </div>
             <div className='ISAAC_section'>
+              <h2 className='ISAAC_section_title'>Version 2</h2>
+              <p className='ISAAC_vision description'>With our MVP complete, we started the second half of our project off with another round of user testing. Some features we were looking to improve were the search algorithm, data gathering and aggregation, admin tool usability, and overall UI beautification. Over the next 3 months, we continued development on ISAAC and the website. Our finished product included all of the features we hoped to implement at the beginning of the second quarter, and our sponsors were excited by what we had presented to them and the potential for what it could be used for.</p>
+              <section className="slider-wrapper">
+                <button className="slide-arrow" id="slide-arrow-prev">
+                  &#8249;
+                </button>
+                <button className="slide-arrow" id="slide-arrow-next">
+                  &#8250;
+                </button>
+                <ul className="slides-container" id="slides-container">
+                  <li className="slide"><img className='web_img' src="../files/ISAAC/index-new.png" alt="index page" /></li>
+                  <li className="slide"><img className='web_img' src="../files/ISAAC/search-new.png" alt="search page" /></li>
+                  <li className="slide"><img className='web_img' src="../files/ISAAC/page-new.png" alt="page content" /></li>
+                  <li className="slide"><img className='web_img' src="../files/ISAAC/edit-new.png" alt="edit page content" /></li>
+                  <li className="slide"><img className='web_img' src="../files/ISAAC/analytics-new.png" alt="page analytics" /></li>
+                </ul>
+              </section>
+            </div>
+            <div className='ISAAC_section'>
               <h2 className='ISAAC_section_title'>Project Vision</h2>
-              <p className='ISAAC_vision description'>With our MVP complete, we hope to started the second half of our project off with another round of user testing. Some features we are looking to improve are the search algorithm as well as the data gathering, aggregation, and serving. Eventually, we would like to reintegrate university authentication to help with assigning administrative privileges and gathering student data that the university already collects.</p>
+              <p className='ISAAC_vision description'>With our capstone project complete, we passed it onto our sponsors. ISAAC is not just a website. With a centralized information repository, ISSAC has the potential to expand into other technologies such as an AI chatbot and more. Both our sponsors and ourselves are excited about the future of ISAAC, and it will continue to be developed by future capstone teams who share the goal of making advising information more useful and accessible for both students and advisors.</p>
             </div>
           </section>
+
           <section className='groupify child' id='groupify'>
             <h1 className="title"> Groupify </h1>
             <p className="header description">If you have a Spotify premium account, click <a href="https://groupify-ae530.web.app/" target="_blank" rel='noreferrer'>here</a>  to check out the groupify app!</p>
@@ -131,6 +153,7 @@ export default function Home() {
               </div>
             </div>
           </section>
+
           <section className='UWSOM child' id='UWSOM'>
             <h1 className='title'>Web Developer for UW School of Medicine</h1>
             <p className='description'>During the Summer of 2022, I worked as a full-stack web developer for UWSOM (University of Washington School of Medicine) on their service learning and community engagement website (view actual website <a href='https://volunteer-site-gcer5r0rc-slweb.vercel.app/'>here</a>). Although it was only for a summer, I worked on a lot of different parts of the website. I focused mainly on UX and was often designing new wireframes in Figma or using css to beautify the website itself. The most valuable thing I gained from this position was the ability to work with other developers in a high commit frequency environment, as well as how to handle discrepancies, code conflicts, and other blockers when they arise.</p>
@@ -138,6 +161,7 @@ export default function Home() {
               <img src='../files/UWSOM/home.png' width='80%' height='100%' alt='Service Learning and Community Engagement UWSOM home page' />
             </div>
           </section>
+
           <section className='design child' id='design'>
             <h1 className="title">Design Projects</h1>
             <h2 className="">Web Design</h2>
@@ -170,6 +194,7 @@ export default function Home() {
               During a summer camp at the University of Washington, I worked on a Unity game with a group of 4 students. The game we chose was a 3D zombie survial game in a small arena with waves of zombies and a timer/score system. I was responsible for the design and development of the player character and zombie entities. Using my knowledge of C# and familiarity with Unities premade assets, I was able to create my part of the game and have it playable in a week.
             </p>
           </section>
+
           <section className='hobbies child' id='hobbies'>
             <h1 className="title"> Hobbies and Creative Pieces </h1>
             <div className="d+d">

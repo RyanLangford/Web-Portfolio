@@ -22,6 +22,24 @@ export default function Home() {
       console.log('scrolling ' + slideWidth + ' pixels left')
       slidesContainer.scrollLeft -= slideWidth;
     });
+
+    const slidesContainer2 = document.getElementById("slides-container2");
+    const slide2 = document.querySelector(".slide2");
+    const prevButton2 = document.getElementById("slide-arrow-prev2");
+    const nextButton2 = document.getElementById("slide-arrow-next2");
+
+    nextButton2.addEventListener("click", () => {
+      console.log("slide next");
+      const slideWidth2 = (slide2.clientWidth);
+      console.log('scrolling ' + slideWidth2 + ' pixels right')
+      slidesContainer2.scrollLeft += slideWidth2;
+    });
+    prevButton2.addEventListener("click", () => {
+      console.log("slide prev");
+      const slideWidth2 = (slide2.clientWidth);
+      console.log('scrolling ' + slideWidth2 + ' pixels left')
+      slidesContainer2.scrollLeft -= slideWidth2;
+    });
   } else {
     // code is running in a non-browser environment
     console.log("non-browser")
@@ -112,19 +130,19 @@ export default function Home() {
             <div className='ISAAC_section'>
               <h2 className='ISAAC_section_title'>Version 2</h2>
               <p className='ISAAC_vision description'>With our MVP complete, we started the second half of our project off with another round of user testing. Some features we were looking to improve were the search algorithm, data gathering and aggregation, admin tool usability, and overall UI beautification. Over the next 3 months, we continued development on ISAAC and the website. Our finished product included all of the features we hoped to implement at the beginning of the second quarter, and our sponsors were excited by what we had presented to them and the potential for what it could be used for.</p>
-              <section className="slider-wrapper">
-                <button className="slide-arrow" id="slide-arrow-prev">
+              <section className="slider-wrapper2">
+                <button className="slide-arrow2" id="slide-arrow-prev2">
                   &#8249;
                 </button>
-                <button className="slide-arrow" id="slide-arrow-next">
+                <button className="slide-arrow2" id="slide-arrow-next2">
                   &#8250;
                 </button>
-                <ul className="slides-container" id="slides-container">
-                  <li className="slide"><img className='web_img' src="../files/ISAAC/index-new.png" alt="index page" /></li>
-                  <li className="slide"><img className='web_img' src="../files/ISAAC/search-new.png" alt="search page" /></li>
-                  <li className="slide"><img className='web_img' src="../files/ISAAC/page-new.png" alt="page content" /></li>
-                  <li className="slide"><img className='web_img' src="../files/ISAAC/edit-new.png" alt="edit page content" /></li>
-                  <li className="slide"><img className='web_img' src="../files/ISAAC/analytics-new.png" alt="page analytics" /></li>
+                <ul className="slides-container2" id="slides-container2">
+                  <li className="slide2"><img className='web_img' src="../files/ISAAC/index-new.png" alt="index page" /></li>
+                  <li className="slide2"><img className='web_img' src="../files/ISAAC/search-new.png" alt="search page" /></li>
+                  <li className="slide2"><img className='web_img' src="../files/ISAAC/page-new.png" alt="page content" /></li>
+                  <li className="slide2"><img className='web_img' src="../files/ISAAC/edit-new.png" alt="edit page content" /></li>
+                  <li className="slide2"><img className='web_img' src="../files/ISAAC/analytics-new.png" alt="page analytics" /></li>
                 </ul>
               </section>
             </div>

@@ -69,7 +69,7 @@ export default function Home() {
               <em>Ryan Langford&apos;s</em> Portfolio
             </h1>
             <p className="description">
-              Welcome to my portfolio. My name is Ryan Langford and I am passionate about design, games and storytelling. I am a student at the University of Washington studying Informatics with a focus on Web Development and Human-Computer Interaction.
+              Welcome to my portfolio. My name is Ryan Langford and I am passionate about design, games and storytelling. I recently graduated from the University of Washington with a Bachelors of Science in Informatics focused on Web Development and Human-Computer Interaction.
             </p>
           </section>
 

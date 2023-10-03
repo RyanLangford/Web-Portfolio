@@ -69,9 +69,9 @@ export default function Home() {
               <em>Ryan Langford&apos;s</em> Portfolio
             </h1>
             <p className="description">
-              Welcome to my portfolio. My name is Ryan Langford and I am passionate about design, games and storytelling. I graduated from the University of Washington studying Information Sciences and Human Computer Interaction. I have a four-year degree and a year of industry experience as a full-stack Web Developer and UX Designer.
+              Welcome to my portfolio. My name is Ryan Langford and I am passionate about design, games and storytelling. I graduated from the University of Washington studying Information Sciences and Human Computer Interaction.
             </p>
-            <p>
+            <p className="description">
               As both a designer and a developer, I create responsive and intuitive web applications that look appealing, offer robust accessibility, and are highly usable. I am able to achieve this functionality by periodically analyzing the needs of the stakeholders to ensure that my design fits their requirements throughout the development process. I am passionate about creating beautiful and highly functional interfaces and I hope to continue developing the skills and experiences to delight users with my future projects.
             </p>
           </section>
@@ -93,7 +93,7 @@ export default function Home() {
             <h1 className='title'> ISAAC </h1>
             <div className='ISAAC_section'>
               <h2 className='ISAAC_section_title'>About the Project</h2>
-              <p className='ISAAC_about description'>As part of my Informatics degree, I am working on a large-scale capstone project with a team of other Informatics students. This project is taking place over my final two quarters at the University of Washington and is sponsored by the UW Informatics Advising Department. My team and I were tasked with identifying the blockers with the current advising solutions within the informatics department and creating a solution that is more efficient and scalable.</p>
+              <p className='ISAAC_about description'>As part of my Informatics degree, I worked on a large-scale capstone project with a team of other Informatics students. This project took place over my final two quarters at the University of Washington and was sponsored by the UW Informatics Advising Department. My team and I were tasked with identifying the blockers with the current advising solutions within the informatics department and creating a solution that is more efficient and scalable.</p>
             </div>
             <div className='ISAAC_section'>
               <h2 className='ISAAC_section_title'>Problem Space</h2>
@@ -160,7 +160,6 @@ export default function Home() {
 
           <section className='groupify child' id='groupify'>
             <h1 className="title"> Groupify </h1>
-            <p className="header description">If you have a Spotify premium account, click <a href="https://groupify-ae530.web.app/" target="_blank" rel='noreferrer'>here</a>  to check out the groupify app!</p>
             <div className='images'>
               <img className='web_img' src="../files/Groupify/HomeScreen.png" width="80%" height="100%" alt="Home Screen"></img>
             </div>

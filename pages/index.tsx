@@ -61,7 +61,7 @@ export default function Home() {
           <a id="groupify_nav" className="menu-item" href="https://portfolio-tau-rose-14.vercel.app/#groupify">Groupify Webdev Project</a>
           <a id="UWSOM_nav" className="menu-item" href="https://portfolio-tau-rose-14.vercel.app/#UWSOM">UWSOM Web Developer</a>
           <a id="design_nav" className="menu-item" href="https://portfolio-tau-rose-14.vercel.app/#design">Design Projects</a>
-          <a id="hobbies_nav" className="menu-item" href="https://portfolio-tau-rose-14.vercel.app/#hobbies">Hobbies & Creative Pces</a>
+          <a id="hobbies_nav" className="menu-item" href="https://portfolio-tau-rose-14.vercel.app/#hobbies">Hobbies & Creative Pieces</a>
         </Menu>
         <div className='scroll-container'>
           <section className='overview child' id='overview'>
@@ -69,7 +69,10 @@ export default function Home() {
               <em>Ryan Langford&apos;s</em> Portfolio
             </h1>
             <p className="description">
-              Welcome to my portfolio. My name is Ryan Langford and I am passionate about design, games and storytelling. I recently graduated from the University of Washington with a Bachelors of Science in Informatics focused on Web Development and Human-Computer Interaction.
+              Welcome to my portfolio. My name is Ryan Langford and I am passionate about design, games and storytelling. I graduated from the University of Washington studying Information Sciences and Human Computer Interaction. I have a four-year degree and a year of industry experience as a full-stack Web Developer and UX Designer.
+            </p>
+            <p>
+              As both a designer and a developer, I create responsive and intuitive web applications that look appealing, offer robust accessibility, and are highly usable. I am able to achieve this functionality by periodically analyzing the needs of the stakeholders to ensure that my design fits their requirements throughout the development process. I am passionate about creating beautiful and highly functional interfaces and I hope to continue developing the skills and experiences to delight users with my future projects.
             </p>
           </section>
 
